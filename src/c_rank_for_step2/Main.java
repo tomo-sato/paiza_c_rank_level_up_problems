@@ -17,6 +17,7 @@ public class Main {
 				break;
 			}
 			int tmpLine = Integer.parseInt(line);
+			// TODO tomo-sato 7が含まれているかどうかなので、これはバグってる。。
 			if (tmpLine == 7) {
 				output = "YES";
 				break;
@@ -24,5 +25,6 @@ public class Main {
 		}
 
 		System.out.println(output);
+
 	}
 }
