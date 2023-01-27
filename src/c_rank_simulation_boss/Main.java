@@ -40,8 +40,8 @@ public class Main {
 	 * パイザ君が与えるダメージ
 	 *
 	 * @param count n回目の攻撃を表すカウント。
-	 * @param damage1 受けたダメージ1
-	 * @param damage2 受けたダメージ2
+	 * @param damage1 受けたダメージ1（(n - 1) 回目の攻撃のダメージ・・・直近のダメージ）
+	 * @param damage2 受けたダメージ2（(n - 2) 回目の攻撃のダメージ・・・古い方のダメージ）
 	 * @return モンスターに与えるダメージ
 	 */
 	private static int getPaizaAttackDamage(int count, int damage1, int damage2) {
